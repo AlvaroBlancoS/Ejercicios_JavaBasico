@@ -9,3 +9,8 @@
 <ul>
 <li>Para este ejercicio tendreís que crear una función que reciba un precio y devuelva el precio con el IVA incluido</li>
 </ul>
+<h1>Ejercicios de tema 3</h1>
+<ul>
+<li>En este ejercicio teneís que crear un bucle que permita concatenar textos e imprima el resultado final por consola</li>
+<li>Tened en cuenta que los textos pueden venir de un array de tipo String. Por ejemplo: String[] nombres = {"", "", "", ""}</li>
+</ul>
