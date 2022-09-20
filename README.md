@@ -14,3 +14,10 @@
 <li>En este ejercicio teneís que crear un bucle que permita concatenar textos e imprima el resultado final por consola</li>
 <li>Tened en cuenta que los textos pueden venir de un array de tipo String. Por ejemplo: String[] nombres = {"", "", "", ""}</li>
 </ul>
+<h1>Ejercicios de tema 4</h1>
+<ul>
+<li>En este ejercicio tendréis que crear una clase SmartDevice. Dentro crearéis las clases hijas: SmartPhone y SmartWatch.</li>
+<li>Agregaréis atributos tal cual tendrían esos objetos en la realidad.</li>
+<li>Crear constructor vacío y con todos los parámetros para cada clase.</li>
+<li>Desde una clase Main: crearéis objetos de cada una y los utilizaréis para imprimir sus valores por consola.</li>
+</ul>
