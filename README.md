@@ -21,3 +21,19 @@
 <li>Crear constructor vacío y con todos los parámetros para cada clase.</li>
 <li>Desde una clase Main: crearéis objetos de cada una y los utilizaréis para imprimir sus valores por consola.</li>
 </ul>
+<h1>Ejercicio de tema 5></h>
+<ul>
+<li>Crear una interfaz CocheCRUD.</li>
+<li>Crear una implementaci�n CocheCRUDImpl que implemente la interfaz CocheCRUD.</li>
+<li>Como métodos de CocheCRUD podemos ponere.</li>
+<li>
+<ul>
+<li>save() findAll() delete() que simplemente impriman por consola el nombre del propio método</li>
+<li>Desde una clase Main, Crear un objeto de tipo CocheCRUDImpl y llamar a cada uno de los métodos./li>
+<li>Ejemplo: </li>
+<ul>
+<li>CocheCRUD cocheCrud = new CocheCRUDImpl()</li>
+</ul>
+</ul>
+</li>
+</ul>
