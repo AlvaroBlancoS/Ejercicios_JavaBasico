@@ -6,7 +6,7 @@ public class EjercicioReverse {
         System.out.println(reverse(texto.toLowerCase()));
     }
     public static String reverse(String texto) {
-
+        
         return new StringBuilder(texto).reverse().toString();
     }
 }
