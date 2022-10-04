@@ -33,7 +33,9 @@ public class EjercicioVector {
         System.out.println("Indica cual es el problema de utilizar un vector" +
                 "con la capacidad por defecto su tuviesemos 1000 elementos " +
                 "para ser añadidos al mismo");
-        System.out.println("Respuesta--->  Sobre mucha memoria y cada vez se duplica más la dimensión del vector");
+        System.out.println("Respuesta--->  No hay ningún problema si el vector puede incrementar la capacidad.\n" +
+                "Pero si sólo tiene el inicio de capacidad por ejemplo 10 posiciones y no incrementa, entonces si\n" +
+                "podría tener problemas");
     }
 
 }
