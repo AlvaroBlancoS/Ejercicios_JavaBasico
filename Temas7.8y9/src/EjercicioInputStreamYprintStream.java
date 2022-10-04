@@ -10,20 +10,20 @@ public class EjercicioInputStreamYprintStream {
         Scanner in = new Scanner(System.in);
         System.out.println("Introduce el fichero de origen:");
         String ficheroOriginal = in.next();//Copias el fichero
-        System.out.println("Introduce el nuevo nombre para el fichero destino");
+        System.out.println("Introduce el fichero destino");
         String ficheroCopia = in.next();//Pegas el fichero
         copiaYpega(ficheroOriginal, ficheroCopia);
     }
 
     public static void copiaYpega(String fileIn, String fileOut) {
       File fichero = new File("Ficheros/" + fileIn + ".txt");
-      //----Supongo que estas condicionales no hacen falta....
-        if (!(fichero.exists())) {
-            System.err.println("El fichero original "+fileIn+" no existe");
+      //----Supongo que no hace falta para el ejercicio...
+        if (!(fichero.exists())){
+            System.err.println(fileIn+" no existe este fichero");
             return;
         }
-        if (fileIn.equalsIgnoreCase(fileOut)){
-            System.err.println("Ese nombre del fichero ya existe y no se puede copiar");
+        if (buscarArchivo(fileOut+".txt", Paths.get("Ficheros/").toFile())){
+            System.err.println("No se ha podido copiar porque "+"'"+fileOut+"'"+" ya existe");
             return;
         }
         //------------------------------------------
@@ -47,5 +47,21 @@ public class EjercicioInputStreamYprintStream {
                 e.printStackTrace();
             }
         }
+    }
+    
+    //Se me ocurrió la idea pero supongo que no necesita para este ejercicio
+    public static boolean buscarArchivo(String nombreFichero, File carpeta) {
+        String[] listado = carpeta.list();
+        if (listado == null || listado.length == 0) {
+            return false;
+        }
+        else {
+            for (int i=0; i< listado.length; i++) {
+                if (listado[i].equals(nombreFichero)) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }
