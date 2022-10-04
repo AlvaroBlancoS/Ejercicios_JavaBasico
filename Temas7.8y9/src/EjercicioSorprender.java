@@ -4,7 +4,9 @@ public class EjercicioSorprender {
     //TODO Sorpréndenos creando un programa de tu elección que utilice
     // InputStream, PrintStream, excepciones, un HashMap y un ArrayList,
     // LinkedList o array.
-    // Crear una función si es palindromo o no y el parámetro es un array de char.
+    // Crear una función si es palindromo o no sin tilde y todas en minúsculas.
+    // Esta función tendrá un parámetro que es un array de char.
+    // Recorrer un bucle cada letra
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.println("Escribe una palabra...");
@@ -17,6 +19,10 @@ public class EjercicioSorprender {
             if (Character.isLetter(minuscula.charAt(i))) {
                 letras[i] = minuscula.charAt(i);
             }
+        }
+        
+        for (int i = 0; i < letras.length; i++) {
+            System.out.println(letras[i]);
         }
 
         if (isPalindromo(letras)) {
