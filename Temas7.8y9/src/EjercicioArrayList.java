@@ -41,18 +41,13 @@ public class EjercicioArrayList {
         ArrayList<Integer> numeros = new ArrayList<>();
         for (int i = 1; i <= 10; i++) {
             numeros.add(i);
-        }
-
-        for (int i = 0; i < numeros.size(); i++) {
-            if (numeros.get(i) % 2 == 0) {
-                numeros.remove(i);
+            for (int j = 0; j < numeros.size(); j++) {
+                if (numeros.get(j) % 2 == 0) {
+                    numeros.remove(j);
+                }
 
             }
         }
-
-        for (int numero: numeros) {
-            System.out.println(numero);
-        }
-
+        System.out.println(numeros);
     }
 }
